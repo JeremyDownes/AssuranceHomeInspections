@@ -21,6 +21,7 @@ header {
 	min-height: 10rem;
 	border: 1px solid black;
 	font-size: 10rem;
+	z-index: 1;
 }
 
 header p{ 
@@ -49,11 +50,11 @@ header p{
 	border-radius: 1rem; 
 	background-color: rgb(124,204,191);
 	font-family: sans-serif;
-	color: rgb(230,230,220);
 }
 
 .jumbotron button:hover{
 	background-color: rgb(104,184,171);
+	color: rgb(230,230,220);
 }
 
 .badge {
@@ -71,12 +72,35 @@ nav {
 	top: 10rem;
 }
 
-nav ul{
+nav > ul{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 2rem;
 	padding: 1rem 0;
+}
+
+nav ul li button {
+	border: none;
+}
+
+nav ul li button:focus {
+	background-color: rgb(114,194,181);
+	padding: .5rem;
+}
+
+li ul {
+	display: none;
+}
+
+li:hover ul , nav ul li button:focus+ul{
+	font-size: 2rem;
+	padding: 1rem;
+	position: absolute;
+	top:-8vh;
+	display: block;
+	background-color: rgb(230,230,220);
+
 }
 
 .intro {
