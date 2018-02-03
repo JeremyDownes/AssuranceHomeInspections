@@ -69,11 +69,12 @@ header p{
 nav {
 	background-color: rgb(230,230,220); 
 	position: sticky;
+	position: -webkit-sticky;
 	top: 10rem;
 }
 
 nav > ul{
-	margin: 0 2%;
+	margin: 0 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
