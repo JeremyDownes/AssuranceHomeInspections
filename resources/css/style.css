@@ -1,0 +1,106 @@
+html * {
+	box-sizing: border-box;
+	margin: 0;
+	color: rgb(65,66,68);
+}
+
+body{ 
+	background-color: rgb(124,204,191);
+}
+
+
+header {
+	background-color: rgb(124,204,191);
+	position: fixed;
+	top: 0;
+	background-image: url('../images/banner.png');
+	background-repeat: no-repeat;
+	background-size: auto 10rem;
+	background-position: left bottom;
+	width: 100%;
+	min-height: 10rem;
+	border: 1px solid black;
+	font-size: 10rem;
+}
+
+header p{ 
+	font-family: sans-serif;
+	padding: 1rem;
+	margin-left: 20%;
+}
+
+.jumbotron {
+	margin-top: 10rem;
+	border-top: 1px solid black;
+	width: 100%;
+	height: auto;
+	min-height: 80rem;
+	background-image: url('../images/house.jpg');
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.jumbotron button{
+	position: relative;
+	top: 70rem; 
+	left: 25rem;
+	padding: 1rem;
+	border-radius: 1rem; 
+	background-color: rgb(124,204,191);
+	font-family: sans-serif;
+	color: rgb(230,230,220);
+}
+
+.jumbotron button:hover{
+	background-color: rgb(104,184,171);
+}
+
+.badge {
+	background-image: url('../images/badge.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 20rem;
+	height: 20rem;
+	float: right;
+}
+
+nav {
+	background-color: rgb(230,230,220); 
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+.intro {
+	padding: 9rem;
+	font-size: 2rem;
+}
+.intro p{
+	padding: 1rem;
+	background-color: rgb(230,230,220);
+}
+
+.intro p:first-child { 
+	line-height: 2.5rem;
+	text-indent: 5rem;
+}
+
+@media only screen and (max-width:1000px) {
+
+	.jumbotron {
+		margin-top: 10rem;
+		background-position: top center;
+		min-height: 60vw;
+	}
+	.jumbotron button{
+	position: relative;
+	top: 50vw; 
+	left: 15vw;
+}
+}
