@@ -4,8 +4,10 @@ $(document).ready(function() {
 	$('header').css({fontSize: fontSize*3.5})
 	$('header span').css({fontSize: fontSize*2})
 
+	$('li button:focus+ul, ul li button:hover+ul').css({position: 'absolute',	top: '-8vh'})
+	
 	$(window).scroll( function () {
-		if ($('nav').position().top > window.innerHeight*0.9) {
+		if ($(this).scrollTop() > fontSize * 50) {
 			$('ul li button:focus+ul, ul li button:hover+ul').css({position: 'absolute',	top: '4vh'})
 		} else {
 			$('li button:focus+ul, ul li button:hover+ul').css({position: 'absolute',	top: '-8vh'})

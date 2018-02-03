@@ -95,24 +95,29 @@ nav > ul{
 
 nav ul li button {
 	border: none;
+	background-color: transparent;
 }
 
 nav ul li button:focus {
 	background-color: rgb(114,194,181);
 	padding: .5rem;
+	z-index: 1
 }
 
 li ul {
 	display: none;
+	border: 1px solid rgb(65,66,68);
+	line-height: 2.5rem;
 }
 
-.focused, li:hover ul , nav ul li button:focus+ul{
+li:hover ul , nav ul li button:focus+ul{
 	font-size: 2rem;
 	padding: 1rem;
 	position: absolute;
 	top:-8vh;
 	display: block;
 	background-color: rgb(230,230,220);
+
 }
  
 button:first-child {
@@ -129,10 +134,11 @@ button:last-child {
 .intro p{
 	padding: 1rem;
 	background-color: rgb(230,230,220);
+	line-height: 4rem;
+	font-size: 3rem;
 }
 
 .intro p:first-child { 
-	line-height: 2.5rem;
 	text-indent: 5rem;
 }
 
@@ -147,5 +153,5 @@ button:last-child {
 	position: relative;
 	top: 50vw; 
 	left: 15vw;
-	}
+}
 }
