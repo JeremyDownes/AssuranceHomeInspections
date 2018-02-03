@@ -74,7 +74,8 @@ nav {
 }
 
 nav > ul{
-	margin: 0 5%;
+	width: 90%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -104,7 +105,14 @@ li:hover ul , nav ul li button:focus+ul{
 	background-color: rgb(230,230,220);
 
 }
-
+ 
+button:first-child {
+	margin-left:-2rem;
+}
+ 
+button:last-child {
+	margin-right: -2rem;
+}
 .intro {
 	padding: 9rem;
 	font-size: 2rem;
